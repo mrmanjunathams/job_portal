@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>Job Portal</title>
+          <meta name = "viewport" content = "width = device-width, initial-scale = 1">
+          <link rel="stylesheet" href="index.css">
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/components/button.min.css">
+          <link rel = "stylesheet" href = "https://fonts.googleapis.com/icon?family=Material+Icons">
+          <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
+          <script type = "text/javascript" src = "https://code.jquery.com/jquery-2.1.1.min.js"></script>
+          <script src = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
+          <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+          <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+          <script src="js/app.js"></script>
+  </head>
+  <body ng-app="myApp" >
+<div class="navbar-fixed">
+    <nav>
+      <div class="nav-wrapper" style="background: Maroon;background: linear-gradient(to right, Maroon, Black);">
+        <a href="#" class="brand-logo"><img src="images/logo.png" style="width:48%;" alt="logo"></a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li> <div class="nav-wrapper">
+    <form>
+      <div class="input-field">
+        <input id="search" ng-model="search" placeholder="Search Skill" type="search" required>
+        <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+        <i class="material-icons">close</i>
+      </div>
+    </form>
+  </div></li>
+  <li><a href="#" style="font-size:17px;">Home</a></li>
+  <li><a href="#!postjob" style="font-size:17px;">Post Job</a></li>
+  <li><a href="#!logIn" style="font-size:17px;">LogIn</a></li>
+  <li><a href="#!register" style="font-size:17px;">Register</a></li>
+  <li><a href="#!aboutus" style="font-size:17px;">About Us</a></li>
+        </ul>
+      </div>
+    </nav>
+</div>
+<div class="row">
+<div class="col-xs-offset-3 col-xs-6">
+<div class="ng-view"></div>
+</div>
+</div>
+
+  </body>
+</html>

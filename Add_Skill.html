@@ -1,0 +1,50 @@
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+ <!-- Compiled and minified JavaScript -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+
+    <link rel="stylesheet" href="addskill.css">
+
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $('select').material_select();
+      });
+
+    </script>
+    <body id="adds">
+    <div class="row">
+    <div class="col-xs-offset-3 col-xs-6">
+      <div class="card-panel">
+        <h3>Add Skill</h3>
+        <div class="input-field col s12">
+          <select multiple>
+          <option value="" disabled selected>Technology</option>
+          <option value="1">Java</option>
+          <option value="2">Nodejs</option>
+          <option value="3">Angularjs</option>
+          <option value="4">oracle</option>
+          <option value="5">html</option>
+          <option value="6">bootstrap</option>
+        </select>
+
+        <div class="row">
+     		   <div class="input-field col s6">
+     		 <input id="github_link" type="text" class="validate">
+     		<label for="github_link" style="font-size:1.5rem;">Github_Link</label>
+     		</div>
+     		</div>
+        <div class="row">
+     		   <div class="input-field col s6">
+     		 <input id="certificate" type="text" class="validate">
+     		<label for="certificate" style="font-size:1.5rem;">Certificatiion_course</label>
+      </div>
+     		</div>
+     		</div>
+<a href="#!employeeprofile" class="waves-effect waves-light black btn"><i class="material-icons right">create</i>Done</a>
+</div>
+</div>
+</div>
+</body>

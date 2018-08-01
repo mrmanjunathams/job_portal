@@ -1,0 +1,78 @@
+<link rel="stylesheet" href="homes.css">
+<link rel = "stylesheet" href = "https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+    <script src="js/app.js"></script>
+    <body ng-app="myApp" ng-controller="myController">
+<div class = "row">
+      <div class = "col s12">
+         <ul class = "tabs">
+            <li class = "tab col s3"><a class = "active" href = "#Candidates">Candidates</a></li>
+            <li class = "tab col s3"><a href = "#Jobs">Jobs</a></li>
+         </ul>
+      </div>
+
+      <div id = "Candidates" class = "col s12" ng-controller="tableController1">
+        <h5>Candidates</h5>
+        <table>
+     <thead>
+       <tr>
+         <th scope="col">#</th>
+         <th>Skills</th>
+         <th>Technology</th>
+         <th>Github</th>
+         <th>Certification</th>
+         <th>Linkdin</th>
+         <th>More About Person</th>
+       </tr>
+     </thead>
+
+     <tbody ng-repeat="d in data | filter : search">
+       <tr>
+         <td>{{d.no}}</td>
+         <td>{{d.skills}}</td>
+         <td>{{d.technology}}</td>
+         <td>{{d.github}}</td>
+         <td>{{d.certification}}</td>
+         <td>{{d.linkdin}}</td>
+         <td>
+           <input type="checkbox" ng-model="more" id="check{{d.no}}" /><label for="check{{d.no}}">More</label>
+         </td>
+       </tr>
+     </tbody>
+   </table>
+   <table ng-show="more">
+     <tbody>
+      <tr>
+      <th>{{d.more.id}}</th>
+      <th>Technology</th>
+      <th>Github</th>
+      <th>Certification</th>
+      <th>Linkdin</th>
+     </tr>
+   </tbody>
+     </table>
+  </div>
+      <div id = "Jobs" class = "col s12">
+        <table ng-repeat="dj in dataj | filter : search">
+          <tr><td>
+            <div id = "Jobs" class = "col s12" ng-controller="tableController2">
+              <div class="navbar navbar-default">
+                <ul class="nav navbar-nav" id="navigation">
+	  			         <p id="heading" style="color:maroon;font-size: 130%; padding-top: 1%;"><b>{{dj.jobtitle}}<hr></b></p>
+	  			         <p>{{dj.company}}</p>
+	  			         <p>Place: {{dj.place}}</p>
+	  			         <p>Description: {{dj.desc}}<hr></p>
+	  			         <p>Skills:{{dj.skills}}<br><br></p>
+						<button class="btn waves-effect waves-light" type="submit" name="action" style="background-color:#330000;">Apply</button>
+          </ul>
+	      </div></td>
+	      </tr>
+	      </table>
+
+      </div>
+  </div>
+</body>

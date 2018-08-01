@@ -1,0 +1,61 @@
+[
+  {
+    "no":1,
+    "company":"Sookshma Chetas Softwares PVT.Ltd",
+    "jobtitle":"Web Designing",
+    "place":"Bengaluru",
+    "desc":"Strong hands-on experience in web development using HTML, HTML5, CSS, CSS3, JQuery, Ajax, JavaScript, JSon, XML",
+    "skills":"HTML5,CSS3,JavaScript,JQuery,Ajax,JSon"
+  },
+
+  {
+    "no":2,
+    "company":"Infosys",
+    "jobtitle":"Backend Development",
+    "place":"Bengaluru",
+    "desc":"Should have at least 5 years of experience in SQL or NO-SQL Database Mantanance and Manipulation. And more importantly those who willing to apply make sure that you know both SQL and JSons",
+    "skills":"SQL(Oracle or H2),JSon(MongoDb)"
+  },
+
+  {
+    "no":3,
+    "company":"Microsoft",
+    "jobtitle":"UI Designing",
+    "place":"Bengaluru",
+    "desc":"Strong hands-on experience in web development using ASP .Net in C#/VB.net and or windows development Strong hands-on experience in HTML, HTML5, CSS, CSS3, JQuery, Ajax, JavaScript, JSon, XML",
+    "skills":"HTML5,CSS3,ASP .NET,Ajax"
+  },
+
+  {
+    "no":4,
+    "company":"Google",
+    "jobtitle":"Machine Learning",
+    "place":"Bengaluru",
+    "desc":"Strong hands-on experience in web development using AI in C#/VB.net and or windows development Strong hands-on experience in HTML, HTML5, CSS, CSS3, JQuery, Ajax, JavaScript, JSon, XML",
+    "skills":"HTML5,CSS,JavaScript,BootStrap.."
+  },
+  {
+    "no":5,
+    "company":"FaceBook",
+    "jobtitle":"MiddleWare Development",
+    "place":"Bengaluru",
+    "desc":"Strong hands-on experience in web development using ASP .Net in C#/VB.net and or windows development Strong hands-on experience in HTML, HTML5, CSS, CSS3, JQuery, Ajax, JavaScript, JSon, XML",
+    "skills":"Java,Python,Php"
+  },
+  {
+    "no":6,
+    "company":"NIIT",
+    "jobtitle":"Web Designing",
+    "place":"Bengaluru",
+    "desc":"Strong hands-on experience in web development using ASP .Net in C#/VB.net and or windows development Strong hands-on experience in HTML, HTML5, CSS, CSS3, JQuery, Ajax, JavaScript, JSon, XML",
+    "skills":"HTML5,BootStrap,Meterialize Css,CSS,JavaScript"
+  },
+  {
+    "no":7,
+    "company":"Amazon",
+    "jobtitle":"Cloud Services",
+    "place":"Bengaluru",
+    "desc":"Strong hands-on experience in web development using ASP .Net in C#/VB.net and or windows development Strong hands-on experience in HTML, HTML5, CSS, CSS3, JQuery, Ajax, JavaScript, JSon, XML",
+    "skills":"JSon,SQL"
+  }
+]

@@ -1,0 +1,26 @@
+.card-panel{
+  margin-left: 25rem;
+  height:20rem;
+  width:45%;
+  height:35rem;
+  background-color:aliceblue;
+
+}
+.card-panel h3{
+  margin:0
+}
+.input-field input:focus + label {
+   color: black !important;
+  font-size:100%;
+
+
+ }
+ /* label underline focus color */
+ .row .input-field input:focus {
+   border-bottom: 1px solid black !important;
+   box-shadow: 0 1px 0 0 black !important;
+     width:200%
+ }
+.btn{
+  margin-bottom:-10rem;
+}

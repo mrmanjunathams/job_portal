@@ -1,0 +1,55 @@
+.card-panel{
+  width:25%;
+  height:32rem;
+  margin-left: 4%;
+
+
+}
+
+button{
+  width:70%;
+  margin-top:2rem;
+
+
+}
+#heading{
+  background: black;
+  padding-top: 1%;
+}
+#heading {
+  font-size: 150%;
+  text-align: center;
+  color: white;
+  padding-top: 1%;
+}
+#body{
+  background: whitesmoke;
+}
+.card2{
+  background:white;
+
+  margin-left:33rem;
+  width:55%;
+  margin-top:-31rem;
+  height:30rem;
+
+}
+.tabs{
+  width:100%;
+  margin:0;
+  background:black;
+
+
+}
+.btn-floating{
+  margin-bottom:-2rem;
+}
+.card2 .btn{
+  margin-top:16rem;
+  width:25%;
+  float:right;
+
+}
+.tab b{
+  color: white;
+}

@@ -1,0 +1,33 @@
+.card-panel{
+  width:auto;
+  height:auto;
+  background-color:transparent;
+}
+.input-field label{
+  font-size:1rem;
+
+
+
+}
+.input-field input:focus + label {
+   color: black !important;
+  font-size:100%;
+
+
+ }
+ /* label underline focus color */
+ .row .input-field input:focus {
+   border-bottom: 1px solid black !important;
+   box-shadow: 0 1px 0 0 black !important
+ }
+#hed{
+
+margin:0;
+}
+.col {
+ //font-size:25%;
+  margin-top:1rem;
+}
+label{
+  color: transparent
+}

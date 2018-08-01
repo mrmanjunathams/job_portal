@@ -1,0 +1,27 @@
+#eff {
+  text-align: center;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+.opps {
+  background-color:white;
+   padding: 10px;
+   text-align: center;
+   color:black;
+}
+.footer {
+  background-color: black;
+   padding: 10px;
+   text-align: center;
+   color: white;
+}
+
+canvas{
+    width:80% !important;
+    height:500px !important;
+    margin-left: 15%;
+    background-image: url("images/bg4.jpg");
+    background-color: rgba(0,0,0,0);
+}

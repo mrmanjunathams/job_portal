@@ -1,0 +1,41 @@
+.card-panel{
+  width:auto;
+  height:auto;
+  background-color:transparent white;
+
+}
+#body{
+  background-color: whitesmoke;
+}
+#hed{
+  font-size:180%;
+  color: black;
+  margin:0;
+
+}
+#company_name{
+  width: 160%;
+}
+#Company_Location{
+  width: 160%;
+}
+#Company_website{
+  width: 160%;
+}
+#contact{
+  width: 160%;
+}
+#name_of_ceo{
+  width: 160%;
+}
+
+.input-field input:focus + label {
+   color: black !important;
+  font-size:100%;
+
+ }
+ /* label underline focus color */
+ .row .input-field input:focus {
+   border-bottom: 1px solid black !important;
+   box-shadow: 0 1px 0 0 black !important
+ }

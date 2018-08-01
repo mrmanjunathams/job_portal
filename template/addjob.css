@@ -1,0 +1,50 @@
+.card-panel{
+  width:65%;
+  height:55rem;
+  margin-left: 25%;
+  margin-top: 3%;
+  padding-left: 3%;
+}
+#body{
+  background: whitesmoke;
+}
+#hed{
+ font-size: 200%;
+  color:white;
+  margin-left:4%;
+}
+.row label{
+  padding-top: 
+}
+#heading{
+  width:111%;
+ margin-top:-6%;
+  margin-left: -5.2%;
+  background: black;
+  height:7rem;
+  padding-top: 1%;
+}
+.btn{
+  color: white;
+  background-color: black;
+  margin-top: 4%;
+}
+#designation{
+  width: 180%;
+}
+
+#skills_required{
+  width: 180%;
+}
+
+#salary{
+  width: 180%;
+}
+
+#date{
+  width: 180%;
+}
+
+#time{
+  width: 180%;
+}
