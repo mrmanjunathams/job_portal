@@ -1,5 +1,3 @@
-
-<head>
   <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans" rel="stylesheet">
   <link rel="stylesheet" href="index.css">
   <meta name = "viewport" content = "width = device-width, initial-scale = 1">
@@ -20,14 +18,18 @@
   window.location.href='main.html';
   })
   </script>
-</head>
-<body>
+  <script>
+     $(document).ready(function(){
+
+       $('.slider').slider({full_width:false});
+     });
+
+     </script>
   <div class="row" id="eff">
-    <div class="col s12" style="background-image:url(images/bg11.jpg);background-size:cover;background-position:center;background-repeat: no-repeat;">
-    <!--  <img src="images/bg11.jpg" alt="bg" style="width:100%;">-->
+    <div class="col s12" style="background-image:url(images/bg7.jpg);background-size:cover;background-position:center;background-repeat: no-repeat;">
     <br><br><br><br><br>
     <h3>
-      <a href="" class="typewrite" style="color:black;" data-period="2000" data-type='[ "Hey, are you searching for a job.", "We are here to help you.", "We are welcoming you to our site.", "Find a job which makes you happy." ,"Choose a job you love, and you will never have to work a day in your life."]'>
+      <a class="typewrite" style="color:black;" data-period="2000" data-type='[ "Hey, are you searching for a job.", "We are here to help you.", "We are welcoming you to our site.", "Find a job which makes you happy." ,"Choose a job you love, and you will never have to work a day in your life."]'>
         <span class="wrap"></span>
       </a>
     </h3>
@@ -35,10 +37,11 @@
     </div>
     </div>
   </div>
+  <div>
+    <h4 style="text-align:center;">Skill based analysis</h4>
+  </div>
  <div class="container">
-      <canvas id="myChart"
-
-      width="100"></canvas>
+      <canvas id="myChart" width="100%"></canvas>
        </div>
 
        <script>
@@ -83,7 +86,7 @@
                                   },
                                   options:{
                                     title:{
-                                      display:true,
+                                      display:false,
                                       text:'Skill analysis',
                                       fontSize:45,
                                       fontColor:'black'
@@ -105,7 +108,25 @@
                                   }
                                 });
 
-       </script><br><br>
+       </script>
+       <script>
+       var myIndex = 0;
+       carousel();
+
+       function carousel() {
+           var i;
+           var x = document.getElementsByClassName("mySlides");
+           for (i = 0; i < x.length; i++) {
+              x[i].style.display = "none";
+           }
+           myIndex++;
+           if (myIndex > x.length) {myIndex = 1}
+           x[myIndex-1].style.display = "block";
+           setTimeout(carousel, 2000); // Change image every 2 seconds
+       }
+       </script>
+       <br><br>
+
        <div class="row">
        <div class="col s5">.</div>
 <div class="col s2">
@@ -114,16 +135,254 @@
   </form>
 <div class="col s5">.</div>
 </div>
- <div>
-  <div class="row"><div class="col s12"> <h5 style="color:black;text-align:center;font-family: 'Lato', sans-serif;"><b><hr>Career Plans<hr></b></h5></div></div>
-    <div class="row">
-      <div class="col s2">.</div>
-      <div class="col s8">
-        <img src="images/front.jpg" alt="image"><br>
+
+<div class="row"><div class="col s12"> <h4 style="color:black;text-align:center;font-family: 'Lato', sans-serif;"><b>Reviews<hr></b></h4></div></div>
+<div class="row">
+  <div class="row" style="width:90%; height:20rem;margin-top:2%;">
+  <div class="col s12">
+  <div class="slider " >
+    <ul class="slides" style="background-color:white;">
+      <li>
+
+      <div class="row">
+        <div class="col s4">
+          <div class="card blue-grey darken-1" style="margin-top:2%;height:25rem; width:25rem;">
+            <div class="card-content white-text">
+              <span class="card-title">MANJUNATHA M S</span><hr>
+              <p>Designing website for job portals also brings both the poles of job vacancies together. A portal needs to have a proper website, which catches the attention of the employers, employees and the website owners themselves.</p>
+            </div>
+            <div class="card-action">
+              <i class="material-icons" style="color:gold;">star</i>
+              <i class="material-icons" style="color:gold;">star</i>
+              <i class="material-icons" style="color:gold;">star</i>
+              <i class="material-icons" style="color:gold;">star</i>
+              <i class="material-icons" style="color:gold;">star_border</i><hr>
+
+            </div>
+            <div>
+              <i class="material-icons" style="color:skyblue;padding-left:5%;">thumb_up</i>
+                <i class="material-icons" style="color:skyblue;padding-left:5%;">thumb_down</i>
+            </div>
+          </div>
+        </div>
+        <div class="col s4">
+          <div class="card blue-grey darken-1" style="margin-top:2%;height:25rem; width:25rem;">
+            <div class="card-content white-text">
+              <span class="card-title">DEEPIKA M</span><hr>
+              <p>To help the job seeker in all ways, a website with vacancies for jobs should also provide samples for CV’s of
+                different sectors, so that one can get a guidance to prepare a CV for oneself. This helps a job seeker in
+                preparing one’s CV and placing in such job portals</p>
+            </div>
+            <div class="card-action">
+              <i class="material-icons" style="color:gold;">star</i>
+              <i class="material-icons" style="color:gold;">star</i>
+              <i class="material-icons" style="color:gold;">star</i>
+              <i class="material-icons" style="color:gold;">star_border</i>
+              <i class="material-icons" style="color:gold;">star_border</i><hr>
+
+            </div>
+            <div>
+              <i class="material-icons" style="color:skyblue;padding-left:5%;">thumb_up</i>
+                <i class="material-icons" style="color:skyblue;padding-left:5%;">thumb_down</i>
+            </div>
+          </div>
+        </div>
+        <div class="col s4">
+          <div class="card blue-grey darken-1" style="margin-top:2%;height:25rem; width:25rem;">
+            <div class="card-content white-text">
+              <span class="card-title">CHAYA BHAT</span><hr>
+              <p>A good designed website should have proper sections where one can contact them easily through mails and get appropriate calls according to one’s requirement. Such job portals should forward the CV’s to the companies that are suitable to one’s career requirements.</p>
+            </div>
+            <div class="card-action">
+              <i class="material-icons" style="color:gold;">star</i>
+              <i class="material-icons" style="color:gold;">star</i>
+              <i class="material-icons" style="color:gold;">star</i>
+              <i class="material-icons" style="color:gold;">star</i>
+              <i class="material-icons" style="color:gold;">star_border</i><hr>
+
+            </div>
+            <div>
+              <i class="material-icons" style="color:skyblue;padding-left:5%;">thumb_up</i>
+                <i class="material-icons" style="color:skyblue;padding-left:5%;">thumb_down</i>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="col s2">.</div>
+
+      </li>
+      <li>
+
+      <div class="row">
+        <div class="col s4">
+          <div class="card black darken-1" style="margin-top:2%;height:25rem; width:25rem;">
+            <div class="card-content white-text">
+              <span class="card-title">MANU R</span><hr>
+              <p>Many people don’t pay to the job portals as they are not financially set especially if they are freshers. But at the same time experienced candidate pay due to quality service of the recruitment portal. Many portals are paid by the company if they help them in hiring a good candidate.</p>
+            </div>
+            <div class="card-action">
+              <i class="material-icons" style="color:gold;">star</i>
+              <i class="material-icons" style="color:gold;">star</i>
+              <i class="material-icons" style="color:gold;">star</i>
+              <i class="material-icons" style="color:gold;">star</i>
+              <i class="material-icons" style="color:gold;">star_border</i><hr>
+
+            </div>
+            <div>
+              <i class="material-icons" style="color:skyblue;padding-left:5%;">thumb_up</i>
+                <i class="material-icons" style="color:skyblue;padding-left:5%;">thumb_down</i>
+            </div>
+          </div>
+        </div>
+        <div class="col s4">
+          <div class="card black darken-1" style="margin-top:2%;height:25rem; width:25rem;">
+            <div class="card-content white-text">
+              <span class="card-title">KAVYA S</span><hr>
+              <p> jobs without any cost. By registering here, get your resume highlighted on world’s largest job portal simplyhired.com and indeed.com. Take a tour to the UDHYOG job portal.</p>
+            </div>
+            <div class="card-action">
+              <i class="material-icons" style="color:gold;">star</i>
+              <i class="material-icons" style="color:gold;">star</i>
+              <i class="material-icons" style="color:gold;">star</i>
+              <i class="material-icons" style="color:gold;">star</i>
+              <i class="material-icons" style="color:gold;">star_border</i><hr>
+
+            </div>
+            <div>
+              <i class="material-icons" style="color:skyblue;padding-left:5%;">thumb_up</i>
+                <i class="material-icons" style="color:skyblue;padding-left:5%;">thumb_down</i>
+            </div>
+          </div>
+        </div>
+        <div class="col s4">
+          <div class="card black darken-1" style="margin-top:2%;height:25rem; width:25rem;">
+            <div class="card-content white-text">
+              <span class="card-title">RAKESH</span><hr>
+              <p>Portal should provide the regular training material or resources to improve the skills of the job seeker to get the best job. Training can help them to be selected by the top organization.</p>
+            </div>
+            <div class="card-action">
+              <i class="material-icons" style="color:gold;">star</i>
+              <i class="material-icons" style="color:gold;">star</i>
+              <i class="material-icons" style="color:gold;">star</i>
+              <i class="material-icons" style="color:gold;">star_border</i>
+              <i class="material-icons" style="color:gold;">star_border</i><hr>
+
+            </div>
+            <div>
+              <i class="material-icons" style="color:skyblue;padding-left:5%;">thumb_up</i>
+                <i class="material-icons" style="color:skyblue;padding-left:5%;">thumb_down</i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      </li>
+      <li>
+
+      <div class="row">
+        <div class="col s4">
+          <div class="card brown darken-1" style="margin-top:2%;height:25rem; width:25rem;">
+            <div class="card-content white-text">
+              <span class="card-title">GREESHMA</span><hr>
+              <p>Best job portals always show the current openings on the daily basis. So that candidates apply on them till they get placed.</p>
+            </div>
+            <div class="card-action">
+              <i class="material-icons" style="color:gold;">star</i>
+              <i class="material-icons" style="color:gold;">star</i>
+              <i class="material-icons" style="color:gold;">star</i>
+              <i class="material-icons" style="color:gold;">star_border</i>
+              <i class="material-icons" style="color:gold;">star_border</i><hr>
+
+            </div>
+            <div>
+              <i class="material-icons" style="color:skyblue;padding-left:5%;">thumb_up</i>
+                <i class="material-icons" style="color:skyblue;padding-left:5%;">thumb_down</i>
+            </div>
+          </div>
+        </div>
+        <div class="col s4">
+          <div class="card brown darken-1" style="margin-top:2%;height:25rem; width:25rem;">
+            <div class="card-content white-text">
+              <span class="card-title">MANISHA</span><hr>
+              <p>Portal should have a section to update the social media links to see the job seekers skills or social circles. It should have the facility to link the social media accounts especially professional accounts like LinkedIn.</p>
+            </div>
+            <div class="card-action">
+              <i class="material-icons" style="color:gold;">star</i>
+              <i class="material-icons" style="color:gold;">star</i>
+              <i class="material-icons" style="color:gold;">star</i>
+              <i class="material-icons" style="color:gold;">star</i>
+              <i class="material-icons" style="color:gold;">star_border</i><hr>
+
+            </div>
+            <div>
+              <i class="material-icons" style="color:skyblue;padding-left:5%;">thumb_up</i>
+                <i class="material-icons" style="color:skyblue;padding-left:5%;">thumb_down</i>
+            </div>
+          </div>
+        </div>
+        <div class="col s4">
+          <div class="card brown darken-1" style="margin-top:2%;height:25rem; width:25rem;">
+            <div class="card-content white-text">
+              <span class="card-title">HANUVEENA</span><hr>
+              <p>Nobody likes complicated process on the employment portal so candidate should be able to register in few steps.</p>
+            </div>
+            <div class="card-action">
+              <i class="material-icons" style="color:gold;">star</i>
+              <i class="material-icons" style="color:gold;">star</i>
+              <i class="material-icons" style="color:gold;">star</i>
+              <i class="material-icons" style="color:gold;">star</i>
+              <i class="material-icons" style="color:gold;">star_border</i><hr>
+
+            </div>
+            <div>
+              <i class="material-icons" style="color:skyblue;padding-left:5%;">thumb_up</i>
+                <i class="material-icons" style="color:skyblue;padding-left:5%;">thumb_down</i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      </li>
+
+    </ul>
+  </div>
+</div>
+</div>
+</div>
+
+ <div>
+  <div class="row"><div class="col s12"> <h4 style="color:black;text-align:center;font-family: 'Lato', sans-serif;"><b>Career Plans<hr></b></h4></div></div>
+    <div class="row">
+      <div class="col s1">.</div>
+      <div class="col s10">
+        <div class="w3-content w3-section">
+          <img class="mySlides" src="images/front.jpg" alt="img" style="width:100%">
+          <img class="mySlides" src="images/front2.jpg" alt="img" style="width:100%">
+          <img class="mySlides" src="images/front3.jpg" alt="img" style="width:100%">
+        </div>
+      </div>
+      <div class="col s1">.</div>
     </div>
  </div>
  <div class="footer">
+   <div class="row">
+     <div class="col s1" style="color:black;">.</div>
+     <div class="col s3">
+       <p><b>Github</b></p>
+       <p>share your project link</p>
+       <p>find more</p>
+     </div>
+     <div class="col s4">
+       <p><b>What's Best</b></p>
+       <p>new opportunities</p>
+       <p>Easy finding jobs</p>
+     </div>
+     <div class="col s3">
+       <p><b>Contact Us</b></p>
+       <p>+919481566564</p>
+       <p>udhyog@gmail.com</p>
+     </div>
+     <div class="col s1" style="color:black;">.</div>
+   </div>
+
+   </div>
 </div>
-</body>
