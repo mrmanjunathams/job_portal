@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Add skills</title>
+
+
+	    <!-- Compiled and minified CSS -->
+	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+
+	    <!-- Compiled and minified JavaScript -->
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<style>
+.input-field input:focus + label {
+   color: black !important;
+  font-size:100%;
+
+ }
+ /* label underline focus color */
+ .row .input-field input:focus {
+   border-bottom: 1px solid black !important;
+   box-shadow: 0 1px 0 0 black !important;
+   width: 150%;
+ }
+ .row .input-field textarea:focus {
+    border-bottom: 1px solid black !important;
+    box-shadow: 1px 1px 1px 1px black !important;
+  }
+  .input-field textarea:focus + label {
+     color: black !important;
+    font-size:100%;
+
+
+   }
+</style>
+  </head>
+  <body id="body" style="background:whitesmoke;">
+
+
+    <div class="row">
+    <div class="card-panel" style="width:55%;height:50rem;margin:auto;margin-top:2%;">
+    <div id="heading">
+    <p id="hed" style="font-size:170%;"><b>Drop your Comments here...</b></p>
+    </div>
+<form class="col s12" action="#!recuiterprofile">
+         <div class="row">
+
+           <div class="input-field col s6">
+             <input id="name" type="text" class="validate" style="width:160%;">
+             <label for="name" style="font-size:1.5rem;">Name</label>
+           </div>
+           </div>
+		<div class="row">
+		           <div class="input-field col s6">
+		             <input id="email" type="text" class="validate" style="width:160%;">
+		             <label for="email" style="font-size:1.5rem;">Email</label>
+		           </div>
+		           </div>
+               <div class="row">
+                          <div class="input-field col s6">
+                            <textarea id="comment" type="text" class="validate" style="width:160%;height:10rem;"></textarea>
+                            <label for="comment" style="font-size:1.5rem;">Write ur Comments</label>
+                          </div>
+                          </div>
+
+                <div class="row">
+
+
+                  <select class="browser-default" style="border-color:black;width:75%;">
+                    <option value="" disabled selected>Drop ur Ratings</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="2">3</option>
+                    <option value="2">4</option>
+                    <option value="2">5</option>
+                  </select>
+                </div>
+
+    <button class="btn waves-effect waves-light" style="background-color:black;color:white;" type="submit" name="action">Drop</button>
+		</form>
+
+
+
+      <div>
+  </div>
+
+  </body>
+  </html>

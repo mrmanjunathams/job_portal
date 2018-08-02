@@ -1,0 +1,12 @@
+.btn{
+  background-color: black
+}
+.btn:visited{
+  background-color: black
+}
+.btn:hover {
+  background-color:  grey darken-4
+}
+.btn:active{
+  background-color: gray;
+}

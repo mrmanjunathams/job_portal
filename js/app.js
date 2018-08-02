@@ -36,6 +36,8 @@ app.config(function($routeProvider){
       controller:"tableController1",
       controller:"tableController2",
       templateUrl:"home.html"
+    }).when("/review",{
+      templateUrl:"reviews.html"
     });
 
 });
