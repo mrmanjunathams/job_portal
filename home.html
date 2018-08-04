@@ -6,6 +6,14 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
     <script src="js/app.js"></script>
+    <style>
+    ul p{
+      margin-top:-1%;
+    }
+  #name p{
+      margin-top:-1%;
+ }
+    </style>
     <body ng-app="myApp" ng-controller="myController">
 <div class = "row">
       <div class = "col s12">
@@ -17,46 +25,70 @@
 
       <div id = "Candidates" class = "col s12" ng-controller="tableController1">
         <h5>Candidates</h5>
-        <table>
-     <thead>
-       <tr>
-         <th scope="col">#</th>
-         <th>Skills</th>
-         <th>Technology</th>
-         <th>Github</th>
-         <th>Certification</th>
-         <th>Linkdin</th>
-         <th>More About Person</th>
-       </tr>
-     </thead>
 
-     <tbody ng-repeat="d in data | filter : search">
-       <tr>
-         <td>{{d.no}}</td>
-         <td>{{d.skills}}</td>
-         <td>{{d.technology}}</td>
-         <td>{{d.github}}</td>
-         <td>{{d.certification}}</td>
-         <td>{{d.linkdin}}</td>
-         <td>
-           <input type="checkbox" ng-model="more" id="check{{d.no}}" /><label for="check{{d.no}}">More</label>
-         </td>
-       </tr>
-     </tbody>
-   </table>
-   <table ng-show="more">
-     <tbody>
-      <tr>
-      <th>{{d.more.id}}</th>
-      <th>Technology</th>
-      <th>Github</th>
-      <th>Certification</th>
-      <th>Linkdin</th>
-     </tr>
-   </tbody>
-     </table>
+        <table ng-repeat="d in data | filter : search">
+          <tbody>
+            <tr>
+              <td>
+       <div ng-app="" style="background:whitesmoke;">
+         <div class="row">
+           <div class="col s12">
+       <div class="navbar navbar-default">
+          <ul class="nav navbar-nav" id="navigation" style="margin-left:7%;width:85%;height:auto;background:white;padding-left:3%;box-shadow: 9px 9px lightgray;
+       margin-top: 2%;">
+             <div class="row">
+
+           <form class="col s12" Style="padding-top:1%;">
+                  <div class="row">
+                    <div class="col s2" >
+                  <img src="images/{{d.gender}}.png" alt="s" class="circle responsive-img" style="width:70%;height:4rem;padding-top:2%;"> <!-- notice the "circle" class -->
+                      </div>
+                    <div class=" col s5" id="name" style="margin-top:1%;padding-left:-2%;">
+                      <p style="color:blue;font-size:140%"><b>{{d.name}}</b></p>
+                      <P style="line-height:0.5%;font-size:100%;color:gray">{{d.designatation}}</P>
+                    </div>
+              </div><hr style="color:gray">
+              <p><b>Skills:</b>&nbsp{{d.skills}}</p>
+               <p><b>Domain:</b>&nbsp {{d.domain}}</p>
+              <p><b>Certification:</b>&nbsp {{d.certification}}<p><hr>
+           <div class="row">
+              <div class="col s4">
+              <a href="{{d.gmail}}"><img src="images/google.png" alt="s" class="circle responsive-img" style="width:35%;height:2.5rem;padding-top:2%;"></a>
+           </div>
+           <div class="col s4">
+             <a href="www.github.com"><img src="images/github.png" alt="s" class="circle responsive-img" style="width:35%;height:2.5rem;padding-top:2%;"></a>
+          </div>
+       <div class="col s4">
+       <a href="{{d.gmail}}"><img src="images/gmail.png" alt="s" class="circle responsive-img" style="width:35%;height:2.5rem;padding-top:2%;"></a>
+            </div>
+     </div>
+
+               <p>
+                  <label>
+                    <input id="indeterminate-checkbox" type="checkbox" ng-model="myVar">
+                    <span>show more details</span>
+                  </label>
+                 </p>
+                <div ng-show="myVar">
+            <p><b>Address:</b>{{d.address}}</p>
+            <p><b>Phone no:</b>{{d.phone}}</p>
+            <p><b>Gender:</b>{{d.gender}}</p>
+            <p><b>DOB:</b>{{d.dob}}</p>
+            </div>
+              </form>
+              </div>
+             </ul>
+       <div>
+       </div></div>
+     </div>
+   </td>
+ </tr>
+</tbody>
+</table>
+      </div>
   </div>
-      <div id = "Jobs" class = "col s12">
+
+  <div id = "Jobs" class = "col s12">
         <table ng-repeat="dj in dataj | filter : search">
           <tr><td>
             <div id = "Jobs" class = "col s12" ng-controller="tableController2">
@@ -74,5 +106,5 @@
 	      </table>
 
       </div>
-  </div>
+</div>
 </body>

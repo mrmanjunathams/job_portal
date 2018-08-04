@@ -1,193 +1,107 @@
 [
   {
     "no":1,
-    "skills":"Web Development",
-    "technology":"Java,Py",
-    "github":"www.github.com/someone/some.git",
-    "certification":"Oracle",
-    "linkdin":"DoSomeThing",
-    "more":
-    {
-      "id":1,
-      "current_role":"_____",
-      "year_of_experience":"0yr",
-      "address":
-      {
-        "id":1,
-        "city":"Bengaluru",
-        "state":"Karnataka",
-        "country":"India"
-      }
-    }
+    "name":"Deepika",
+    "designatation":"Web Developer",
+    "skills":"Java, C, C++, J2EE, NodeJs, AngularJs",
+    "github":"www.github.com/someone/someone.git",
+    "certification":"C, C++, Java",
+    "domain":"Development",
+    "address":"#123, Bengaluru, karnataka, India",
+    "phone":"+914361846856",
+    "gender":"Female",
+    "dob":"07-05-1997",
+    "email":"fjtvdjyjytv@gmail.com",
+    "password":"1234567890"
   },
-
-    {
+   {
       "no":2,
-      "skills":"Full Stack",
-      "technology":"Java,Php,Html,Bootstrap",
-      "github":"www.github.com/someone/some.git",
-      "certification":"Java Oracle",
-      "linkdin":"SomeLinkdin",
-      "more":
-      {
-        "id":2,
-        "current_role":"_____",
-        "year_of_experience":"0yr",
-        "address":
-        {
-          "id":2,
-          "city":"Bengaluru",
-          "state":"Karnataka",
-          "country":"India"
-        }
-      }
+      "name":"Chaya Bhat",
+      "designatation":"Backend Developer",
+      "skills":"Java, NodeJs, AngularJs, SQL, JSons",
+      "github":"www.github.com/someone/someone.git",
+      "certification":"C, Java, J2EE",
+      "domain":"Development",
+      "address":"#940, SomePlace, Bengaluru, karnataka, India",
+      "phone":"+919483545464",
+      "gender":"Female",
+      "dob":"09-09-1996",
+      "email":"fcgnfgf@gmail.com",
+      "password":"1234567890"
     },
-
-      {
-        "no":3,
-        "skills":"Basic Programmer",
-        "technology":"C,C++,Java",
-        "github":"www.github.com/someone/some.git",
-        "certification":"C and C++",
-        "linkdin":"NA",
-        "more":
-        {
-          "id":3,
-          "current_role":"_____",
-          "year_of_experience":"0yr",
-          "address":
-          {
-            "id":3,
-            "city":"Bengaluru",
-            "state":"Karnataka",
-            "country":"India"
-          }
-        }
-      },
-      {
-        "no":4,
-        "skills":"Cloud Computing",
-        "technology":"Java,Python,Php",
-        "github":"www.github.com/someone/some.git",
-        "certification":"DataScience",
-        "linkdin":"NA",
-        "more":
-        {
-          "id":4,
-          "current_role":"_____",
-          "year_of_experience":"0yr",
-          "address":
-          {
-            "id":4,
-            "city":"Bengaluru",
-            "state":"Karnataka",
-            "country":"India"
-          }
-        }
-      },
-      {
-        "no":5,
-        "skills":"Machine Learning",
-        "technology":"Java,Python",
-        "github":"www.github.com/someone/some.git",
-        "certification":"NA",
-        "linkdin":"SomeLinkdin",
-        "more":
-        {
-          "id":5,
-          "current_role":"_____",
-          "year_of_experience":"0yr",
-          "address":
-          {
-            "id":5,
-            "city":"Bengaluru",
-            "state":"Karnataka",
-            "country":"India"
-          }
-        }
-      },
-      {
-        "no":6,
-        "skills":"BigData",
-        "technology":"Java,Py,spark",
-        "github":"www.github.com/someone/some.git",
-        "certification":"NA",
-        "linkdin":"NA",
-        "more":
-        {
-          "id":6,
-          "current_role":"_____",
-          "year_of_experience":"0yr",
-          "address":
-          {
-            "id":6,
-            "city":"Bengaluru",
-            "state":"Karnataka",
-            "country":"India"
-          }
-        }
-      },
-      {
-        "no":7,
-        "skills":"Web Warehouseing",
-        "technology":"Java,SQL(SQLite)",
-        "github":"www.github.com/someone/some.git",
-        "certification":"Oracle,MongoDb University",
-        "linkdin":"NA",
-        "more":
-        {
-          "id":7,
-          "current_role":"_____",
-          "year_of_experience":"0yr",
-          "address":
-          {
-            "id":7,
-            "city":"Bengaluru",
-            "state":"Karnataka",
-            "country":"India"
-          }
-        }
-      },
-      {
-        "no":8,
-        "skills":"MiddleWare Development",
-        "technology":"Java,Python,Php",
-        "github":"www.github.com/someone/some.git",
-        "certification":"NA",
-        "linkdin":"SomeLinkdin",
-        "more":
-        {
-          "id":8,
-          "current_role":"_____",
-          "year_of_experience":"0yr",
-          "address":
-          {
-            "id":8,
-            "city":"Bengaluru",
-            "state":"Karnataka",
-            "country":"India"
-          }
-        }
-      },
-      {
-        "no":9,
-        "skills":"Web Designing",
-        "technology":"HTML5,CSS3,Bootstrap,JQuery,JavaScript",
-        "github":"www.github.com/someone/some.git",
-        "certification":"NA",
-        "linkdin":"NA",
-        "more":
-        {
-          "id":9,
-          "current_role":"_____",
-          "year_of_experience":"0yr",
-          "address":
-          {
-            "id":9,
-            "city":"Bengaluru",
-            "state":"Karnataka",
-            "country":"India"
-          }
-        }
-      }
+    {
+      "no":3,
+      "name":"Kavya S",
+      "designatation":"Tester",
+      "skills":"Java, C, C++, J2EE, NodeJs, AngularJs",
+      "github":"www.github.com/kavyass/job_portal.git",
+      "certification":"C, C++, Java, J2EE",
+      "domain":"Development",
+      "address":"#890,Chikka Devara Betta, Kote, Mysore, karnataka, India",
+      "phone":"+91954540524",
+      "gender":"Female",
+      "dob":"26-06-1997",
+      "email":"kavyas2468@gmail.com",
+      "password":"1234567890"
+    },
+    {
+      "no":4,
+      "name":"Manu R",
+      "designatation":"Software Developer",
+      "skills":"Java, C, C++, J2EE, NodeJs, AngularJs",
+      "github":"www.github.com/mrmanur/job_portal.git",
+      "certification":"C, C++, Java, J2EE",
+      "domain":"Development",
+      "address":"#569, Kattiriguppy, Bengaluru, karnataka, India",
+      "phone":"+917899991331",
+      "gender":"Male",
+      "dob":"02-09-1997",
+      "email":"mrmanur@gmail.com",
+      "password":"1234567890"
+    },
+    {
+      "no":5,
+      "name":"Manjunatha M S",
+      "designatation":"Software Developer",
+      "skills":"Java, C, C++, J2EE, NodeJs, AngularJs",
+      "github":"www.github.com/mrmanjunathams/job_portal.git",
+      "certification":"C, C++, Java, J2EE",
+      "domain":"Development",
+      "address":"#94, D.S.Hally, Chitradurga, karnataka, India",
+      "phone":"+919481566564",
+      "gender":"Male",
+      "dob":"09-05-1998",
+      "email":"mrmanjunathams@gmail.com",
+      "password":"1234567890"
+    },
+  {
+    "no":6,
+    "name":"Rakesh",
+    "designatation":"Software Developer",
+    "skills":"Java, C, C++, J2EE, NodeJs, AngularJs, SQL, JSons,HTML5,CSS3",
+    "github":"www.github.com/rakeshsagar64/job_portal.git",
+    "certification":"C, C++, Java, J2EE, Oracle",
+    "domain":"Development",
+    "address":"#94, Bengaluru, Karnataka, India",
+    "phone":"+91254514353",
+    "gender":"Male",
+    "dob":"06-04-1993",
+    "email":"rakeshsagar64@gmail.com",
+    "password":"1234567890"
+  },
+  {
+    "no":7,
+    "name":"Silence",
+    "designatation":"Web Developer",
+    "skills":"Java, C, C++, J2EE, NodeJs, AngularJs",
+    "github":"www.github.com/silence/job_portal.git",
+    "certification":"C, C++, Java, J2EE",
+    "domain":"Development",
+    "address":"#940, BEML Complex, RR Nagar, Bengaluru, karnataka, India",
+    "phone":"+919481566564",
+    "gender":"Male",
+    "dob":"09-07-1998",
+    "email":"mrsilence@gmail.com",
+    "password":"1234567890"
+  }
 ]
