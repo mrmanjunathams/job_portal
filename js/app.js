@@ -38,6 +38,8 @@ app.config(function($routeProvider){
       templateUrl:"home.html"
     }).when("/review",{
       templateUrl:"reviews.html"
+    }).when("/model",{
+      templateUrl:"model.html"
     });
 
 });
